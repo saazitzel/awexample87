@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: EmployeeService
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: ustjavams05
+Implementation-Vendor-Id: com.spring.employee
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/EmployeeService
+Created-By: Maven Integration for Eclipse
+
