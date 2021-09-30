@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <b>Navbar</b>&nbsp;
+            <li><a href="">Home</a></li>&nbsp;
+            <li><a href="">Link</a></li> &nbsp;
+            <li><select><option value="india">India</option>
+                <option value="europe">Europe</option></select></li>&nbsp;
+            <li><a href="">Disabled</a></li>
+            <form>
+                <input type="text" placeholder="Search" name="serach"/>
+                <button type="search" value="Search">Search</button>
+            </form>
+        </ul>
+ </nav>
+</header>
+<body>
+    <main>
+        <script>
+            let a;
+            let date;
+            let time;
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+            setInterval( () => {
+                a= new Date();
+                date = a.toLocaleDateString(undefined, options);
+                time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+                document.getElementById('time').innerHTML = time + "<br>on" + date;
+            } , 1000);
+        </script>
+        <div class="container my-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Current time Is: <span id="time"></span></h1><br>
+                <p class="lead">We Have got you covered. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+                </p> <p> featured content or information.</p>
+                    <hr class="my-4">
+                   <br><br> <p>We are here to show you the time for different countries</p>
+                <br><br>  <a class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
+            </div>
+            </div>
+        
+    </main>
+    
+</body>
+</html>
